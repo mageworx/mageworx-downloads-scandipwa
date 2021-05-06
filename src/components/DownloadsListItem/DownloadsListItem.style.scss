@@ -1,0 +1,26 @@
+.MwDownloads {
+    &__Link {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+
+        &-Container {
+            display: flex;
+        }
+    }
+
+    &__Item {
+        &-Container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-Description {
+            display: inline-block;
+        }
+    }
+
+    &__Meta {
+        margin-left: 0.5rem;
+        color: #777;
+    }
+}

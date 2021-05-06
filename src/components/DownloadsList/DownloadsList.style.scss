@@ -1,0 +1,69 @@
+.MwDownloads {
+    padding: 2rem 0;
+
+    $this: &;
+
+    &__List {
+        padding: 0;
+        list-style: none;
+        color: #000;
+        position: relative;
+    }
+
+    &__Item {
+        margin: 0;
+        padding: 0 1.5rem;
+        margin-bottom: 1rem;
+        position: relative;
+
+        $item: &;
+
+        & > #{$this}__List {
+            margin: 0.5rem 0 0 0.5rem;
+
+            &::before {
+                content: "";
+                display: block;
+                width: 0;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                border-left: 1px solid;
+            }
+
+            & > #{$item} {
+                &:before {
+                    content: "";
+                    display: block;
+                    width: 10px;
+                    padding: 0;
+                    height: 0;
+                    border-top: 1px solid;
+                    margin-top: -1px;
+                    position: absolute;
+                    top: 1rem;
+                    left: 0;
+                }
+
+                &:last-child {
+                    &::before {
+                        background: white;
+                        height: auto;
+                        top: 1rem;
+                        left: 0;
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+
+        &::before {
+            display: none;
+        }
+
+        strong {
+            line-height: 2rem;
+        }
+    }
+}

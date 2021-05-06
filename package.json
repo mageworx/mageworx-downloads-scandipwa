@@ -1,0 +1,12 @@
+{
+    "name": "mageworx-downloads-scandipwa",
+    "version": "1.0.0",
+    "license": "OSL-3.0",
+    "author": "MageWorx",
+    "scandipwa": {
+        "type": "extension"
+    },
+    "eslintConfig": {
+        "extends": "@scandipwa"
+    }
+}
